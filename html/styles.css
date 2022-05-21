@@ -1,4 +1,12 @@
+h2 {
+    margin: 20px 20px 20px 20px;
+    color: white;
+    text-align: center;
+}
+
 [data-tab-content] {
+    padding-top: 20px;
+
     display: none;
     background-color: #F8F8FF;
     border-radius: 0px 0px 10px 10px;
@@ -50,12 +58,33 @@ body {
     color: black;
 }
 
-/*  choice box  */
-#components {
-    padding: 5px 50px 5px 70px;
-    border-radius: 10px;
+form.myform {
+    display: table;
 }
 
-#components option {
-    color: black;
+div.myform {
+    display: table-row;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+input {
+    border-radius: 5px 5px 5px 5px;
+}
+
+table {
+    border-collapse: collapse;
+    /* width: 400px; */
+    text-align: left;
+}
+
+th {
+    padding-right: 40px;
 }

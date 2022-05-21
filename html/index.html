@@ -9,30 +9,62 @@
     <title>Document</title>
 </head>
 <body>
+    <h2>Gépösszeállító</h2>
     <ul class="tabs">
         <li data-tab-target="#add-component" class="active tab">Komponens hozzáadása</li>
+        <li data-tab-target="#search" class="tab">Keresés</li>
         <li data-tab-target="#actual-config" class="tab">Aktuális konfiguráció</li>
         <li data-tab-target="#configs" class="tab">Konfigurációk</li>
     </ul>
 
     <div class="tab-content">
         <div id="add-component" data-tab-content class="active">
-
-            <label for="components">Válassz egy komponenst:</label><br>
-
-            <select name="components" id="components">
-            <option value="processor">Proceszor</option>
-            <option value="hdd">Merevlemez</option>
-            <option value="motherboard">Alaplap</option>
-            <option value="memory">Memória</option>
-            <option value="powersupply">Tápegység</option>
-            </select>
+            <p>Processzor hozzáadása az adatbázishoz</p>
+            <form action="/savedata" method="post" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded">
+                <div class="myform">
+                    <label>Modell</label>
+                    <input type="text" name="model">
+                </div>
+                <div class="myform">
+                    <label>Frekvencia</label>
+                    <input type="text" name="frequency">
+                </div>
+                <div class="myform">
+                    <label>Magok száma</label>
+                    <input type="text" name="numOfCores">
+                </div>
+                <div class="myform">
+                    <label>Integrált GPU</label>
+                    <input type="text" name="integratedGPU">
+                </div>
+                <div class="myform">
+                    <label>Ár</label>
+                    <input type="text" name="price">
+                </div>
+                    <input type="submit" style="margin-left: 211px; " value = "Mentés">
+            </form>
         </div>
-        <div id="add-component" data-tab-content>
-            <p>komponens hozzáadása</p>
+        <div id="search" data-tab-content>
+            <p>Keresés</p>
         </div>
         <div id="actual-config" data-tab-content>
             <p>Aktuális konfig</p>
+            <table>
+                <tr>
+                    <th>Modell</th>
+                    <th>Frekvencia</th>
+                    <th>Magok száma</th>
+                    <th>Integrált GPU</th>
+                    <th>Ár</tr>
+                </tr>
+                <!-- <tr>
+                    <td>Modell</td>
+                    <td>Frekvencia</td>
+                    <td>Magok száma</td>
+                    <td>Integrált GPU</td>
+                    <td>Ár</td>
+                </tr> -->
+            </table>
         </div>
         <div id="configs" data-tab-content>
             <p>Konfigok</p>

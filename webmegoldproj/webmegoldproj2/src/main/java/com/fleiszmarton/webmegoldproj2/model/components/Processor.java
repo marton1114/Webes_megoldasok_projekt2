@@ -18,7 +18,6 @@ public class Processor {
 
     private double frequency;
     private int numOfCores;
-    private String socketType;
     private String integratedGPU;
 
     protected double price;
@@ -71,14 +70,6 @@ public class Processor {
         this.frequency = frequency;
     }
 
-    public String getSocketType() {
-        return socketType;
-    }
-
-    public void setSocketType(String socketType) {
-        this.socketType = socketType;
-    }
-
     public int getNumOfCores() {
         return numOfCores;
     }
@@ -101,7 +92,6 @@ public class Processor {
                 "Sorozat: " + series + '\n' +
                 "Modell: " + model + '\n' +
                 "Maximális frekvencia: " + frequency + '\n' +
-                "Foglalat típusa: " + socketType + '\n' +
                 "Magok száma: " + numOfCores + '\n' +
                 "Integrált GPU: " + integratedGPU + '\n' +
                 "Ár: " + price;
