@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Config } from '../config';
+import { ActivatedRoute } from '@angular/router';
+import { ConfigService } from '../config.service';
 
 @Component({
   selector: 'app-config-details',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConfigDetailsComponent implements OnInit {
 
-  constructor() { }
+  id: number
+  config: Config
+  constructor(private route: ActivatedRoute, private configService: ConfigService) { }
 
   ngOnInit(): void {
-  }
+    this.id = this.route.snapshot.params['id'];
 
+    this.config = new Config();
+    this.configService.getConfigById(this.id).subscribe( data => {
+      this.config = data;
+    });
+  }
 }

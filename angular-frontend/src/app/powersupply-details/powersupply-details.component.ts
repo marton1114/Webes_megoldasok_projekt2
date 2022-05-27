@@ -1,24 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { Powersupply } from '../powersupply';
+import { PowerSupply } from '../powersupply';
 import { ActivatedRoute } from '@angular/router';
-import { PowersupplyService } from '../powersupply.service';
+import { PowerSupplyService } from '../powersupply.service';
 
 @Component({
   selector: 'app-powersupply-details',
   templateUrl: './powersupply-details.component.html',
   styleUrls: ['./powersupply-details.component.css']
 })
-export class PowersupplyDetailsComponent implements OnInit {
+export class PowerSupplyDetailsComponent implements OnInit {
 
   id: number
-  powersupply: Powersupply
-  constructor(private route: ActivatedRoute, private processorService: PowersupplyService) { }
+  powersupply: PowerSupply
+  constructor(private route: ActivatedRoute, private processorService: PowerSupplyService) { }
 
   ngOnInit(): void {
     this.id = this.route.snapshot.params['id'];
 
-    this.powersupply = new Powersupply();
-    this.powersupplyService.getPowersupplyById(this.id).subscribe( data => {
+    this.powersupply = new PowerSupply();
+    this.powersupplyService.getPowerSupplyById(this.id).subscribe( data => {
       this.powersupply = data;
     });
   }

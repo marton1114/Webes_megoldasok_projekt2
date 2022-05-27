@@ -35,32 +35,32 @@ public class Config {
     private HardDriveDisk hardDriveDisk;
 
 
-    public HardDriveDisk getHardDriveDisk() {
-        return hardDriveDisk;
+    public String getHardDriveDisk() {
+        return hardDriveDisk.toString();
     }
 
     public void setHardDriveDisk(HardDriveDisk hardDriveDisk) {
         this.hardDriveDisk = hardDriveDisk;
     }
 
-    public Memory getMemory() {
-        return memory;
+    public String getMemory() {
+        return memory.toString();
     }
 
     public void setMemory(Memory memory) {
         this.memory = memory;
     }
 
-    public Motherboard getMotherboard() {
-        return motherboard;
+    public String getMotherboard() {
+        return motherboard.toString();
     }
 
     public void setMotherboard(Motherboard motherboard) {
         this.motherboard = motherboard;
     }
 
-    public PowerSupply getPowerSupply() {
-        return powerSupply;
+    public String getPowerSupply() {
+        return powerSupply.toString();
     }
 
     public void setPowerSupply(PowerSupply powerSupply) {
@@ -71,8 +71,8 @@ public class Config {
         this.processor = processor;
     }
 
-    public Processor getProcessor() {
-        return processor;
+    public String getProcessor() {
+        return processor.toString();
     }
 
 
