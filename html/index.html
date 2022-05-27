@@ -20,7 +20,7 @@
     <div class="tab-content">
         <div id="add-component" data-tab-content class="active">
             <p>Processzor hozzáadása az adatbázishoz</p>
-            <form action="/savedata" method="post" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded">
+            <form action="">
                 <div class="myform">
                     <label>Modell</label>
                     <input type="text" name="model">
@@ -48,7 +48,7 @@
             <p>Keresés</p>
         </div>
         <div id="actual-config" data-tab-content>
-            <p>Aktuális konfig</p>
+            <p>Processzor</p>
             <table>
                 <tr>
                     <th>Modell</th>
@@ -57,17 +57,39 @@
                     <th>Integrált GPU</th>
                     <th>Ár</tr>
                 </tr>
-                <!-- <tr>
+                <tr>
                     <td>Modell</td>
                     <td>Frekvencia</td>
                     <td>Magok száma</td>
                     <td>Integrált GPU</td>
                     <td>Ár</td>
-                </tr> -->
+                </tr>
             </table>
+            <form action="">
+                <labe>Konfiguráció neve: </label>
+                <input type="text" name="config-name">
+                <input type="submit" value = "Mentés">
+            </form>
         </div>
         <div id="configs" data-tab-content>
-            <p>Konfigok</p>
+            <table>
+                <tr>
+                    <th>Név</th>
+                    <th>Processzor</th>
+                    <th>Alaplap</th>
+                    <th>Memória</th>
+                    <th>Merevlemez</th>
+                    <th>Tápegység</th>
+                </tr>
+                <tr>
+                    <td>teszt_név</td>
+                    <td>teszt_processzor</td>
+                    <td>teszt_alaplap</td>
+                    <td>teszt_memória</td>
+                    <td>teszt_merevlemez</td>
+                    <td>teszt_tápegység</td>
+                </tr>
+            </table>
         </div>
     </div>
 </body>

@@ -10,7 +10,7 @@ h2 {
     display: none;
     background-color: #F8F8FF;
     border-radius: 0px 0px 10px 10px;
-    margin: 0px 18px 10px 10px;
+    margin: 0px 10px 10px 10px;
 }
 
 [data-tab-content] > * {
@@ -26,6 +26,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: #030003;
+    font-size: 20px;
 }
 
 .tabs {
@@ -86,5 +87,14 @@ table {
 }
 
 th {
-    padding-right: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+td {
+    padding-right: 20px;
+    padding-left: 20px;
 }
