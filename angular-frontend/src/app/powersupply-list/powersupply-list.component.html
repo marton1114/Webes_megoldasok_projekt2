@@ -1,0 +1,26 @@
+<div class = "row">
+  <h2> PowerSupply List</h2>
+</div>
+
+<table class = "table table-striped table-bordered">
+  <thead>
+  <tr>
+    <th> Modell</th>
+    <th> Részletek </th>
+    <th> Ár</th>
+    <th> Műveletek </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor = "let powersupply of powersupplies" >
+    <td> {{ powersupply.model }} </td>
+    <td> {{ powersupply.details }} </td>
+    <td> {{ powersupply.price }} </td>
+    <td>
+      <button (click) = "updatePowerSupply(powersupply.id)" class = "btn btn-primary"> Módosítás</button>
+      <button (click) = "deletePowerSupply(powersupply.id)" class = "btn btn-danger" style="margin-left: 10px"> Törlés</button>
+      <button (click) = "powersupplyDetails(powersupply.id)" class = "btn btn-primary" style="margin-left: 10px"> Megtekintés</button>
+    </td>
+  </tr>
+  </tbody>
+</table>

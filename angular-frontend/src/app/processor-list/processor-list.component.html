@@ -1,0 +1,26 @@
+<div class = "row">
+  <h2> Processor List</h2>
+</div>
+
+<table class = "table table-striped table-bordered">
+  <thead>
+  <tr>
+    <th> Modell</th>
+    <th> Részletek </th>
+    <th> Ár</th>
+    <th> Műveletek </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor = "let processor of processors" >
+    <td> {{ processor.model }} </td>
+    <td> {{ processor.details }} </td>
+    <td> {{ processor.price }} </td>
+    <td>
+      <button (click) = "updateProcessor(processor.id)" class = "btn btn-primary"> Módosítás</button>
+      <button (click) = "deleteProcessor(processor.id)" class = "btn btn-danger" style="margin-left: 10px"> Törlés</button>
+      <button (click) = "processorDetails(processor.id)" class = "btn btn-primary" style="margin-left: 10px"> Megtekintés</button>
+    </td>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,26 @@
+<div class = "row">
+  <h2> Config List</h2>
+</div>
+
+<table class = "table table-striped table-bordered">
+  <thead>
+  <tr>
+    <th> Modell</th>
+    <th> Részletek </th>
+    <th> Ár</th>
+    <th> Műveletek </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor = "let config of powersupplies" >
+    <td> {{ config.model }} </td>
+    <td> {{ config.details }} </td>
+    <td> {{ config.price }} </td>
+    <td>
+      <button (click) = "updateConfig(config.id)" class = "btn btn-primary"> Módosítás</button>
+      <button (click) = "deleteConfig(config.id)" class = "btn btn-danger" style="margin-left: 10px"> Törlés</button>
+      <button (click) = "configDetails(config.id)" class = "btn btn-primary" style="margin-left: 10px"> Megtekintés</button>
+    </td>
+  </tr>
+  </tbody>
+</table>

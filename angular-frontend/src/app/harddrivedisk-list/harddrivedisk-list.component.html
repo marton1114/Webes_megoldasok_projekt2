@@ -1,0 +1,26 @@
+<div class = "row">
+  <h2> HardDriveDisk List</h2>
+</div>
+
+<table class = "table table-striped table-bordered">
+  <thead>
+  <tr>
+    <th> Modell</th>
+    <th> Részletek </th>
+    <th> Ár</th>
+    <th> Műveletek </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor = "let harddrivedisk of powersupplies" >
+    <td> {{ harddrivedisk.model }} </td>
+    <td> {{ harddrivedisk.details }} </td>
+    <td> {{ harddrivedisk.price }} </td>
+    <td>
+      <button (click) = "updateHardDriveDisk(harddrivedisk.id)" class = "btn btn-primary"> Módosítás</button>
+      <button (click) = "deleteHardDriveDisk(harddrivedisk.id)" class = "btn btn-danger" style="margin-left: 10px"> Törlés</button>
+      <button (click) = "harddrivediskDetails(harddrivedisk.id)" class = "btn btn-primary" style="margin-left: 10px"> Megtekintés</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
