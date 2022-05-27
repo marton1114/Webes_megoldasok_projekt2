@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class UpdateMotherboardComponent implements OnInit {
 
-  id: number;
+  id: number = 0;
   motherboard: Motherboard = new Motherboard();
   constructor(private motherboardService: MotherboardService,
     private route: ActivatedRoute,

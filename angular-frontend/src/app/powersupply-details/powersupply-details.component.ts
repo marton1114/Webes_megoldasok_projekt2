@@ -10,15 +10,15 @@ import { PowerSupplyService } from '../powersupply.service';
 })
 export class PowerSupplyDetailsComponent implements OnInit {
 
-  id: number
-  powersupply: PowerSupply
-  constructor(private route: ActivatedRoute, private processorService: PowerSupplyService) { }
+  id: number = 0;
+  powersupply: PowerSupply = new PowerSupply();
+  constructor(private route: ActivatedRoute, private powerSupplyService: PowerSupplyService) { }
 
   ngOnInit(): void {
     this.id = this.route.snapshot.params['id'];
 
     this.powersupply = new PowerSupply();
-    this.PowerSupplyService.getPowerSupplyById(this.id).subscribe( data => {
+    this.powerSupplyService.getPowerSupplyById(this.id).subscribe( data => {
       this.powersupply = data;
     });
   }

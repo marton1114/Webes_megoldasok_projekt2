@@ -1,6 +1,6 @@
 export class Motherboard {
-    id: number;
-    model: string;
-    details: string;
-    price: number;
+    id: number = 0;
+    model: string = '';
+    details: string = '';
+    price: number = 0;
 }

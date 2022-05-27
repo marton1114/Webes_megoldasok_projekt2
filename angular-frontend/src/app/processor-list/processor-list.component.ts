@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class ProcessorListComponent implements OnInit {
 
-  processors: Processor[];
+  processors: Processor[] = [];
 
   constructor(private processorService: ProcessorService,
     private router: Router) { }

@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class UpdatePowerSupplyComponent implements OnInit {
 
-  id: number;
+  id: number = 0;
   powersupply: PowerSupply = new PowerSupply();
   constructor(private powersupplyService: PowerSupplyService,
     private route: ActivatedRoute,

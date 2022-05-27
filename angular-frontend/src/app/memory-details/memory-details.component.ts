@@ -10,8 +10,8 @@ import { MemoryService } from '../memory.service';
 })
 export class MemoryDetailsComponent implements OnInit {
 
-  id: number
-  memory: Memory
+  id: number = 0;
+  memory: Memory = new Memory();
   constructor(private route: ActivatedRoute, private memoryService: MemoryService) { }
 
   ngOnInit(): void {

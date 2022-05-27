@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class ConfigListComponent implements OnInit {
 
-  configs: Config[];
+  configs: Config[] = [];
 
   constructor(private configService: ConfigService,
     private router: Router) { }

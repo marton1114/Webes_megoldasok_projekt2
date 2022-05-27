@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class UpdateProcessorComponent implements OnInit {
 
-  id: number;
+  id: number = 0;
   processor: Processor = new Processor();
   constructor(private processorService: ProcessorService,
     private route: ActivatedRoute,

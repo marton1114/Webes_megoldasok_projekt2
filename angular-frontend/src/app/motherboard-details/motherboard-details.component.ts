@@ -10,8 +10,8 @@ import { MotherboardService } from '../motherboard.service';
 })
 export class MotherboardDetailsComponent implements OnInit {
 
-  id: number
-  motherboard: Motherboard
+  id: number = 0;
+  motherboard: Motherboard = new Motherboard();
   constructor(private route: ActivatedRoute, private motherboardService: MotherboardService) { }
 
   ngOnInit(): void {

@@ -10,8 +10,8 @@ import { ConfigService } from '../config.service';
 })
 export class ConfigDetailsComponent implements OnInit {
 
-  id: number
-  config: Config
+  id: number = 0;
+  config: Config = new Config();
   constructor(private route: ActivatedRoute, private configService: ConfigService) { }
 
   ngOnInit(): void {

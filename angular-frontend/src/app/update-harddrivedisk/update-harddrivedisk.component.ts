@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class UpdateHardDriveDiskComponent implements OnInit {
 
-  id: number;
+  id: number = 0;
   harddrivedisk: HardDriveDisk = new HardDriveDisk();
   constructor(private harddrivediskService: HardDriveDiskService,
     private route: ActivatedRoute,

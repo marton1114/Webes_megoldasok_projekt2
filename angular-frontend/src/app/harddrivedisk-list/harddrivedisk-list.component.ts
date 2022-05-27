@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class HardDriveDiskListComponent implements OnInit {
 
-  harddrivedisks: HardDriveDisk[];
+  harddrivedisks: HardDriveDisk[] = [];
 
   constructor(private harddrivediskService: HardDriveDiskService,
     private router: Router) { }

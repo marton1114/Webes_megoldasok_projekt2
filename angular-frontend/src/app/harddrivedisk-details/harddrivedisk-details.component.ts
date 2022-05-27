@@ -10,8 +10,8 @@ import { HardDriveDiskService } from '../harddrivedisk.service';
 })
 export class HardDriveDiskDetailsComponent implements OnInit {
 
-  id: number
-  harddrivedisk: HardDriveDisk
+  id: number = 0;
+  harddrivedisk: HardDriveDisk = new HardDriveDisk();
   constructor(private route: ActivatedRoute, private harddrivediskService: HardDriveDiskService) { }
 
   ngOnInit(): void {

@@ -10,8 +10,8 @@ import { ProcessorService } from '../processor.service';
 })
 export class ProcessorDetailsComponent implements OnInit {
 
-  id: number
-  processor: Processor
+  id: number = 0;
+  processor: Processor = new Processor();
   constructor(private route: ActivatedRoute, private processorService: ProcessorService) { }
 
   ngOnInit(): void {

@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class MotherboardListComponent implements OnInit {
 
-  motherboards: Motherboard[];
+  motherboards: Motherboard[] = [];
 
   constructor(private motherboardService: MotherboardService,
     private router: Router) { }

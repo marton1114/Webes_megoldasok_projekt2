@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class PowerSupplyListComponent implements OnInit {
 
-  powersupplies: PowerSupply[];
+  powersupplies: PowerSupply[] = [];
 
   constructor(private powersupplyService: PowerSupplyService,
     private router: Router) { }

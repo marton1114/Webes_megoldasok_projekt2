@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class UpdateMemoryComponent implements OnInit {
 
-  id: number;
+  id: number = 0;
   memory: Memory = new Memory();
   constructor(private memoryService: MemoryService,
     private route: ActivatedRoute,

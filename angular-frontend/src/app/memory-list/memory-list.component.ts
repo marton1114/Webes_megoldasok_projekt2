@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class MemoryListComponent implements OnInit {
 
-  memories: Memory[];
+  memories: Memory[] = [];
 
   constructor(private memoryService: MemoryService,
     private router: Router) { }
