@@ -29,19 +29,19 @@ public class HardDriveDiskController {
     private HardDriveDiskRepository hardDriveDiskRepository;
 
 
-    @GetMapping("/hardDriveDisks")
+    @GetMapping("/harddrivedisks")
     public List<HardDriveDisk> getAllHardDriveDisks(){
         return hardDriveDiskRepository.findAll();
     }
 
 
-    @PostMapping("/hardDriveDisks")
+    @PostMapping("/harddrivedisks")
     public HardDriveDisk createHardDriveDisk(@RequestBody HardDriveDisk hardDriveDisk) {
         return hardDriveDiskRepository.save(hardDriveDisk);
     }
 
 
-    @GetMapping("/hardDriveDisks/{id}")
+    @GetMapping("/harddrivedisks/{id}")
     public ResponseEntity<HardDriveDisk> getHardDriveDiskById(@PathVariable Long id) {
         HardDriveDisk hardDriveDisk = hardDriveDiskRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("HardDriveDisk not exist with id :" + id));
@@ -50,7 +50,7 @@ public class HardDriveDiskController {
 
     // update hardDriveDisk rest api
 
-    @PutMapping("/hardDriveDisks/{id}")
+    @PutMapping("/harddrivedisks/{id}")
     public ResponseEntity<HardDriveDisk> updateHardDriveDisk(@PathVariable Long id, @RequestBody HardDriveDisk hardDriveDiskDetails){
         HardDriveDisk hardDriveDisk = hardDriveDiskRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("HardDriveDisk not exist with id :" + id));
@@ -64,7 +64,7 @@ public class HardDriveDiskController {
     }
 
     // delete hardDriveDisk rest api
-    @DeleteMapping("/hardDriveDisks/{id}")
+    @DeleteMapping("/harddrivedisks/{id}")
     public ResponseEntity<Map<String, Boolean>> deleteHardDriveDisk(@PathVariable Long id){
         HardDriveDisk hardDriveDisk = hardDriveDiskRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("HardDriveDisk not exist with id :" + id));

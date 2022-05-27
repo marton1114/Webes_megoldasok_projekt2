@@ -29,19 +29,19 @@ public class PowerSupplyController {
     private PowerSupplyRepository powerSupplyRepository;
 
 
-    @GetMapping("/powerSupplies")
+    @GetMapping("/powersupplies")
     public List<PowerSupply> getAllPowerSupplies(){
         return powerSupplyRepository.findAll();
     }
 
 
-    @PostMapping("/powerSupplies")
+    @PostMapping("/powersupplies")
     public PowerSupply createPowerSupply(@RequestBody PowerSupply powerSupply) {
         return powerSupplyRepository.save(powerSupply);
     }
 
 
-    @GetMapping("/powerSupplies/{id}")
+    @GetMapping("/powersupplies/{id}")
     public ResponseEntity<PowerSupply> getPowerSupplyById(@PathVariable Long id) {
         PowerSupply powerSupply = powerSupplyRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("PowerSupply not exist with id :" + id));
@@ -49,7 +49,7 @@ public class PowerSupplyController {
     }
 
 
-    @PutMapping("/powerSupplies/{id}")
+    @PutMapping("/powersupplies/{id}")
     public ResponseEntity<PowerSupply> updatePowerSupply(@PathVariable Long id, @RequestBody PowerSupply powerSupplyDetails){
         PowerSupply powerSupply = powerSupplyRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("PowerSupply not exist with id :" + id));
@@ -63,7 +63,7 @@ public class PowerSupplyController {
     }
 
 
-    @DeleteMapping("/powerSupplies/{id}")
+    @DeleteMapping("/powersupplies/{id}")
     public ResponseEntity<Map<String, Boolean>> deletePowerSupply(@PathVariable Long id){
         PowerSupply powerSupply = powerSupplyRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("PowerSupply not exist with id :" + id));
