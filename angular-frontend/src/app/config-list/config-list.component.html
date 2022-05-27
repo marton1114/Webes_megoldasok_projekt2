@@ -12,12 +12,15 @@
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor = "let config of powersupplies" >
-    <td> {{ config.model }} </td>
-    <td> {{ config.details }} </td>
+  <tr *ngFor = "let config of configs" >
+    <td> {{ config.name }} </td>
+    <td> {{ config.processor }} </td>
+    <td> {{ config.powersupply }} </td>
+    <td> {{ config.motherboard }} </td>
+    <td> {{ config.memory }} </td>
+    <td> {{ config.harddrivedisk }} </td>
     <td> {{ config.price }} </td>
     <td>
-      <button (click) = "updateConfig(config.id)" class = "btn btn-primary"> Módosítás</button>
       <button (click) = "deleteConfig(config.id)" class = "btn btn-danger" style="margin-left: 10px"> Törlés</button>
       <button (click) = "configDetails(config.id)" class = "btn btn-primary" style="margin-left: 10px"> Megtekintés</button>
     </td>

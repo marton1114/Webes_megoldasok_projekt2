@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { PowersupplyService } from './powersupply.service';
+import { PowerSupplyService } from './powersupply.service';
 
-describe('PowersupplyService', () => {
-  let service: PowersupplyService;
+describe('PowerSupplyService', () => {
+  let service: PowerSupplyService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(PowersupplyService);
+    service = TestBed.inject(PowerSupplyService);
   });
 
   it('should be created', () => {

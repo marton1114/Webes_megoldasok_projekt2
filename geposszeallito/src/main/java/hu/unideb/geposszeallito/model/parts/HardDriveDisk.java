@@ -3,7 +3,7 @@ package hu.unideb.geposszeallito.model.parts;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "hardDriveDisks")
+@Table(name = "harddrivedisks")
 public class HardDriveDisk {
 
     @Id

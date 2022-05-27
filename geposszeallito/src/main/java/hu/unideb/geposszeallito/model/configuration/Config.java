@@ -5,7 +5,7 @@ import hu.unideb.geposszeallito.model.parts.*;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "configurations")
+@Table(name = "configs")
 public class Config {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -34,6 +34,18 @@ public class Config {
     @JoinColumn(name = "hard_drive_disk_id")
     private HardDriveDisk hardDriveDisk;
 
+	public Config() {
+    }
+
+    public Config(String name, Processor processor, PowerSupply powerSupply, Motherboard motherboard, Memory memory, HardDriveDisk hardDriveDisk, double price) {
+        this.name = name;
+		this.processor = processor;
+		this.powerSupply = powerSupply;
+		this.motherboard =  motherboard;
+		this.memory = memory;
+		this. hardDriveDisk = hardDriveDisk;
+		this.price = price;
+    }
 
     public String getHardDriveDisk() {
         return hardDriveDisk.toString();

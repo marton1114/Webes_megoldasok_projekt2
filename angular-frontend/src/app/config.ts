@@ -5,6 +5,7 @@ import { Memory } from './memory';
 import { HardDriveDisk } from './harddrivedisk';
 
 export class Config {
+    id: number;
     name: string;
     price: number;
     processor: Processor;

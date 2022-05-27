@@ -36,31 +36,31 @@ const routes: Routes = [
   {path: 'create-processor', component: CreateProcessorComponent},
   {path: '', redirectTo: 'processors', pathMatch: 'full'},
   {path: 'update-processor/:id', component: UpdateProcessorComponent},
-  {path: 'processor-details/:id', component: ProcessorDetailsComponent}
+  {path: 'processor-details/:id', component: ProcessorDetailsComponent},
 
   {path: 'powersupplies', component: PowerSupplyListComponent},
   {path: 'create-powersupply', component: CreatePowerSupplyComponent},
   {path: '', redirectTo: 'powersupplies', pathMatch: 'full'},
   {path: 'update-powersupply/:id', component: UpdatePowerSupplyComponent},
-  {path: 'powersupply-details/:id', component: PowerSupplyDetailsComponent}
+  {path: 'powersupply-details/:id', component: PowerSupplyDetailsComponent},
 
   {path: 'motherboards', component: MotherboardListComponent},
   {path: 'create-motherboard', component: CreateMotherboardComponent},
   {path: '', redirectTo: 'motherboards', pathMatch: 'full'},
   {path: 'update-motherboard/:id', component: UpdateMotherboardComponent},
-  {path: 'motherboard-details/:id', component: MotherboardDetailsComponent}
+  {path: 'motherboard-details/:id', component: MotherboardDetailsComponent},
 
   {path: 'memories', component: MemoryListComponent},
   {path: 'create-memory', component: CreateMemoryComponent},
   {path: '', redirectTo: 'memories', pathMatch: 'full'},
   {path: 'update-memory/:id', component: UpdateMemoryComponent},
-  {path: 'memory-details/:id', component: MemoryDetailsComponent}
+  {path: 'memory-details/:id', component: MemoryDetailsComponent},
 
   {path: 'harddrivedisks', component: HardDriveDiskListComponent},
   {path: 'create-harddrivedisk', component: CreateHardDriveDiskComponent},
   {path: '', redirectTo: 'harddrivedisks', pathMatch: 'full'},
   {path: 'update-harddrivedisk/:id', component: UpdateHardDriveDiskComponent},
-  {path: 'harddrivedisk-details/:id', component: HardDriveDiskDetailsComponent}
+  {path: 'harddrivedisk-details/:id', component: HardDriveDiskDetailsComponent},
 
 
   {path: 'configs', component: ConfigListComponent},

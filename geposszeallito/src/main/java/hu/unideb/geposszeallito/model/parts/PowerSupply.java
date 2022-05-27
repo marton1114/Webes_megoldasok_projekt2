@@ -3,7 +3,7 @@ package hu.unideb.geposszeallito.model.parts;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "powerSupplies")
+@Table(name = "powersupplies")
 public class PowerSupply {
 
     @Id

@@ -18,7 +18,7 @@ export class PowerSupplyDetailsComponent implements OnInit {
     this.id = this.route.snapshot.params['id'];
 
     this.powersupply = new PowerSupply();
-    this.powersupplyService.getPowerSupplyById(this.id).subscribe( data => {
+    this.PowerSupplyService.getPowerSupplyById(this.id).subscribe( data => {
       this.powersupply = data;
     });
   }
