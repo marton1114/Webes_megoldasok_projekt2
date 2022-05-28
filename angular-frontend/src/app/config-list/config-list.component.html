@@ -1,12 +1,16 @@
-<div class = "row">
-  <h2> Config List</h2>
+<div>
+  <h2> Konfiguráció lista</h2>
 </div>
 
-<table class = "table table-striped table-bordered">
+<table>
   <thead>
   <tr>
-    <th> Modell</th>
-    <th> Részletek </th>
+    <th> Név</th>
+    <th> Processzor </th>
+    <th> Tápegység </th>
+    <th> Alaplap </th>
+    <th> Memória </th>
+    <th> Merevlemez </th>
     <th> Ár</th>
     <th> Műveletek </th>
   </tr>
@@ -21,8 +25,8 @@
 <!--    <td> {{ config.harddrivedisk }} </td>-->
 <!--    <td> {{ config.price }} </td>-->
     <td>
-      <button (click) = "deleteConfig(config.id)" class = "btn btn-danger" style="margin-left: 10px"> Törlés</button>
-      <button (click) = "configDetails(config.id)" class = "btn btn-primary" style="margin-left: 10px"> Megtekintés</button>
+      <button (click) = "deleteConfig(config.id)" class = "deletebutton"> Törlés </button>
+      <button (click) = "configDetails(config.id)"> Megtekintés </button>
     </td>
   </tr>
   </tbody>

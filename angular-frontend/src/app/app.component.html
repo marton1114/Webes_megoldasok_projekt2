@@ -1,50 +1,51 @@
-<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-  <ul class = "navbar-nav">
-    <li class = "nav-item">
-      <a routerLink="processors" routerLinkActive="active" class="nav-link" >Processzorok</a>
-    </li>
-    <li class = "nav-item">
-      <a routerLink="create-processor" routerLinkActive="active" class="nav-link" >Processzor létrehozása</a>
-    </li>
+<h1>Gépösszeállító</h1>
 
-    <li class = "nav-item">
-      <a routerLink="powersupplies" routerLinkActive="active" class="nav-link" >Tápegységek</a>
+<ul>
+  <a routerLink="processors">
+    <li class="tab">
+      Processzorok
     </li>
-    <li class = "nav-item">
-      <a routerLink="create-powersupply" routerLinkActive="active" class="nav-link" >Tápegység létrehozása</a>
-    </li>
+  </a>
 
-    <li class = "nav-item">
-      <a routerLink="motherboards" routerLinkActive="active" class="nav-link" >Alaplapok</a>
+  <a routerLink="powersupplies">
+    <li class="tab">
+      Tápegységek
     </li>
-    <li class = "nav-item">
-      <a routerLink="create-motherboard" routerLinkActive="active" class="nav-link" >Alaplap létrehozása</a>
-    </li>
+  </a>
 
-    <li class = "nav-item">
-      <a routerLink="memories" routerLinkActive="active" class="nav-link" >Memóriák</a>
+  <a routerLink="motherboards">
+    <li class="tab">
+      Alaplapok
     </li>
-    <li class = "nav-item">
-      <a routerLink="create-memory" routerLinkActive="active" class="nav-link" >Memória létrehozása</a>
-    </li>
+  </a>
 
-    <li class = "nav-item">
-      <a routerLink="harddrivedisks" routerLinkActive="active" class="nav-link" >Merevlemezek</a>
+  <a routerLink="memories">
+    <li class="tab">
+      Memóriák
     </li>
-    <li class = "nav-item">
-      <a routerLink="create-harddrivedisk" routerLinkActive="active" class="nav-link" >Merevlemez létrehozása</a>
-    </li>
+  </a>
 
-    <li class = "nav-item">
-      <a routerLink="configs" routerLinkActive="active" class="nav-link" >Konfigurációk</a>
+  <a routerLink="harddrivedisks">
+    <li class="tab">
+      Merevlemezek
     </li>
-    <li class = "nav-item">
-      <a routerLink="create-config" routerLinkActive="active" class="nav-link" >Konfiguráció létrehozása</a>
-    </li>
-  </ul>
-</nav>
+  </a>
 
-<h1 class="text-center"> {{title}} </h1>
+  <a routerLink="create-config">
+    <li class="tab">
+      Aktuális konfiguráció
+    </li>
+  </a>
+
+  <a routerLink="configs">
+    <li class="tab">
+      Konfigurációk
+    </li>
+  </a>
+</ul>
+
+<!-- <h1> {{title}} </h1> -->
+
 <div class = "container">
   <router-outlet></router-outlet>
 </div>

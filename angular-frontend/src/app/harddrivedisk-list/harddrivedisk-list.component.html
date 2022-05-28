@@ -1,8 +1,8 @@
-<div class = "row">
-  <h2> HardDriveDisk List</h2>
+<div>
+  <h2> Merevlemez lista</h2>
 </div>
 
-<table class = "table table-striped table-bordered">
+<table>
   <thead>
   <tr>
     <th> Modell</th>
@@ -17,10 +17,12 @@
     <td> {{ harddrivedisk.details }} </td>
     <td> {{ harddrivedisk.price }} </td>
     <td>
-      <button (click) = "updateHardDriveDisk(harddrivedisk.id)" class = "btn btn-primary"> Módosítás</button>
-      <button (click) = "deleteHardDriveDisk(harddrivedisk.id)" class = "btn btn-danger" style="margin-left: 10px"> Törlés</button>
-      <button (click) = "harddrivediskDetails(harddrivedisk.id)" class = "btn btn-primary" style="margin-left: 10px"> Megtekintés</button>
+      <button (click) = "updateHardDriveDisk(harddrivedisk.id)"> Módosítás</button>
+      <button (click) = "deleteHardDriveDisk(harddrivedisk.id)" class = "deletebutton"> Törlés</button>
+      <button (click) = "harddrivediskDetails(harddrivedisk.id)"> Megtekintés</button>
     </td>
   </tr>
   </tbody>
 </table>
+
+Merevlemez létrehozása: <button routerLink="../create-harddrivedisk" class="addbutton">+</button>

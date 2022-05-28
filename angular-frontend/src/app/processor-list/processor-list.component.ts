@@ -32,6 +32,8 @@ export class ProcessorListComponent implements OnInit {
     this.router.navigate(['update-processor', id]);
   }
 
+
+
   deleteProcessor(id: number){
     this.processorService.deleteProcessor(id).subscribe( data => {
       console.log(data);

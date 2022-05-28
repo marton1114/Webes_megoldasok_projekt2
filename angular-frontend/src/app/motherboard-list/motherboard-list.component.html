@@ -1,8 +1,8 @@
-<div class = "row">
-  <h2> Motherboard List</h2>
+<div>
+  <h2> Alaplap lista</h2>
 </div>
 
-<table class = "table table-striped table-bordered">
+<table>
   <thead>
   <tr>
     <th> Modell</th>
@@ -17,10 +17,12 @@
     <td> {{ motherboard.details }} </td>
     <td> {{ motherboard.price }} </td>
     <td>
-      <button (click) = "updateMotherboard(motherboard.id)" class = "btn btn-primary"> Módosítás</button>
-      <button (click) = "deleteMotherboard(motherboard.id)" class = "btn btn-danger" style="margin-left: 10px"> Törlés</button>
-      <button (click) = "motherboardDetails(motherboard.id)" class = "btn btn-primary" style="margin-left: 10px"> Megtekintés</button>
+      <button (click) = "updateMotherboard(motherboard.id)"> Módosítás</button>
+      <button (click) = "deleteMotherboard(motherboard.id)" class = "deletebutton"> Törlés</button>
+      <button (click) = "motherboardDetails(motherboard.id)"> Megtekintés</button>
     </td>
   </tr>
   </tbody>
 </table>
+
+Alaplap létrehozása: <button routerLink="../create-motherboard" class="addbutton">+</button>

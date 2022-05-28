@@ -1,8 +1,8 @@
-<div class = "row">
-  <h2> Memory List</h2>
+<div>
+  <h2> Memória lista</h2>
 </div>
 
-<table class = "table table-striped table-bordered">
+<table>
   <thead>
   <tr>
     <th> Modell</th>
@@ -17,10 +17,12 @@
     <td> {{ memory.details }} </td>
     <td> {{ memory.price }} </td>
     <td>
-      <button (click) = "updateMemory(memory.id)" class = "btn btn-primary"> Módosítás</button>
-      <button (click) = "deleteMemory(memory.id)" class = "btn btn-danger" style="margin-left: 10px"> Törlés</button>
-      <button (click) = "memoryDetails(memory.id)" class = "btn btn-primary" style="margin-left: 10px"> Megtekintés</button>
+      <button (click) = "updateMemory(memory.id)" > Módosítás</button>
+      <button (click) = "deleteMemory(memory.id)" class = "deletebutton"> Törlés</button>
+      <button (click) = "memoryDetails(memory.id)" > Megtekintés</button>
     </td>
   </tr>
   </tbody>
 </table>
+
+Memória létrehozása: <button routerLink="../create-memory" class="addbutton">+</button>
