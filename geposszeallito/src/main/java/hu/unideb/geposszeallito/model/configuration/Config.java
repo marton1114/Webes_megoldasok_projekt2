@@ -15,44 +15,44 @@ public class Config {
     private double price;
 
     @OneToOne
-    @JoinColumn(name = "processor_id")
+    @JoinColumn(name = "processor")
     private Processor processor;
 
     @OneToOne
-    @JoinColumn(name = "power_supply_id")
-    private PowerSupply powerSupply;
+    @JoinColumn(name = "powersupply")
+    private PowerSupply powersupply;
 
     @OneToOne
-    @JoinColumn(name = "motherboard_id")
+    @JoinColumn(name = "motherboard")
     private Motherboard motherboard;
 
     @OneToOne
-    @JoinColumn(name = "memory_id")
+    @JoinColumn(name = "memory")
     private Memory memory;
 
     @OneToOne
-    @JoinColumn(name = "hard_drive_disk_id")
-    private HardDriveDisk hardDriveDisk;
+    @JoinColumn(name = "harddrivedisk")
+    private HardDriveDisk harddrivedisk;
 
 	public Config() {
     }
 
-    public Config(String name, Processor processor, PowerSupply powerSupply, Motherboard motherboard, Memory memory, HardDriveDisk hardDriveDisk, double price) {
+    public Config(String name, Processor processor, PowerSupply powersupply, Motherboard motherboard, Memory memory, HardDriveDisk harddrivedisk, double price) {
         this.name = name;
 		this.processor = processor;
-		this.powerSupply = powerSupply;
+		this.powersupply = powersupply;
 		this.motherboard =  motherboard;
 		this.memory = memory;
-		this. hardDriveDisk = hardDriveDisk;
+		this.harddrivedisk = harddrivedisk;
 		this.price = price;
     }
 
     public String getHardDriveDisk() {
-        return hardDriveDisk.toString();
+        return harddrivedisk.toString();
     }
 
-    public void setHardDriveDisk(HardDriveDisk hardDriveDisk) {
-        this.hardDriveDisk = hardDriveDisk;
+    public void setHardDriveDisk(HardDriveDisk harddrivedisk) {
+        this.harddrivedisk = harddrivedisk;
     }
 
     public String getMemory() {
@@ -72,11 +72,11 @@ public class Config {
     }
 
     public String getPowerSupply() {
-        return powerSupply.toString();
+        return powersupply.toString();
     }
 
-    public void setPowerSupply(PowerSupply powerSupply) {
-        this.powerSupply = powerSupply;
+    public void setPowerSupply(PowerSupply powersupply) {
+        this.powersupply = powersupply;
     }
 
     public void setProcessor(Processor processor) {

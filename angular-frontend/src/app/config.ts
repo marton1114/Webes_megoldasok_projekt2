@@ -9,8 +9,8 @@ export class Config {
     name: string = '';
     price: number = 0;
     processor: Processor = new Processor();
-    powersupply: PowerSupply = new PowerSupply();
+    powerSupply: PowerSupply = new PowerSupply();
     motherboard: Motherboard = new Motherboard();
     memory: Memory = new Memory();
-    harddrivedisk: HardDriveDisk = new HardDriveDisk();
+    hardDriveDisk: HardDriveDisk = new HardDriveDisk();
 }

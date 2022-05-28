@@ -50,6 +50,7 @@ button {
     border-radius: 10px 10px 10px 10px;
     padding: 10px 10px 10px 10px;
     margin: 0px 0px 0px 5px;
+    font-family: 'Comfortaa';
 }
 
 .deletebutton {
@@ -60,7 +61,7 @@ button {
 .savebutton {
     background-color: green;
     color: white;
-    margin-left: 430px;
+    margin-left: 500px;
     padding: 10px 20px 10px 20px;
 }
 
@@ -116,7 +117,7 @@ label, input {
 }
 
 label {
-    width: 100px;
+    width: 30%;
 }
 
 input[type=text] {
@@ -127,4 +128,15 @@ input[type=text] {
 }
 
 
+/****************************/
+
+/*      select tagek        */
+select {
+    width: 150%;
+    border-radius: 10px;
+    padding-left: 10px;
+    /* width: 390px; */
+    height: 30px;
+    margin: 10px 10px 0px 100px;
+}
 /****************************/

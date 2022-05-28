@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { HarddrivediskService } from './harddrivedisk.service';
+import { HardDriveDiskService } from './harddrivedisk.service';
 
 describe('HarddrivediskService', () => {
-  let service: HarddrivediskService;
+  let service: HardDriveDiskService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(HarddrivediskService);
+    service = TestBed.inject(HardDriveDiskService);
   });
 
   it('should be created', () => {

@@ -61,4 +61,11 @@ public class Processor {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "Modell: " + model + '\n' +
+                "Specifikációk: " + details + '\n' +
+                "Ár: " + price;
+    }
 }

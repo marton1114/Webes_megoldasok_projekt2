@@ -17,13 +17,13 @@
   </thead>
   <tbody>
   <tr *ngFor = "let config of configs" >
-<!--    <td> {{ config.name }} </td>-->
-<!--    <td> {{ config.processor }} </td>-->
-<!--    <td> {{ config.powersupply }} </td>-->
-<!--    <td> {{ config.motherboard }} </td>-->
-<!--    <td> {{ config.memory }} </td>-->
-<!--    <td> {{ config.harddrivedisk }} </td>-->
-<!--    <td> {{ config.price }} </td>-->
+    <td> {{ config.name }} </td>
+    <td> {{ config.processor }} </td>
+    <td> {{ config.powerSupply }} </td>
+    <td> {{ config.motherboard }} </td>
+    <td> {{ config.memory }} </td>
+    <td> {{ config.hardDriveDisk }} </td>
+    <td> {{ config.price }} </td>
     <td>
       <button (click) = "deleteConfig(config.id)" class = "deletebutton"> Törlés </button>
       <button (click) = "configDetails(config.id)"> Megtekintés </button>
